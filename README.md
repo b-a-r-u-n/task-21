@@ -15,3 +15,8 @@ corresponding grade using a series of ternary operators.
 
 This code snippet is demonstrating the use of an object in JavaScript to represent a car with
 properties like name, model, and year.
+
+# Problem 4
+
+This code snippet is filtering out the prime numbers from the array `arr` which contains numbers
+from 1 to 100.
