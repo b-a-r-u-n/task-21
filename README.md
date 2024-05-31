@@ -20,3 +20,8 @@ properties like name, model, and year.
 
 This code snippet is filtering out the prime numbers from the array `arr` which contains numbers
 from 1 to 100.
+
+# Problem 5
+
+This code snippet demonstrates the use of the `map`, `filter`, and `reduce` functions in JavaScript
+with an array `arr` containing numbers [10, 24, 37, 40, 50, 60, 75, 80, 97, 100].
