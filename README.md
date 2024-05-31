@@ -25,3 +25,8 @@ from 1 to 100.
 
 This code snippet demonstrates the use of the `map`, `filter`, and `reduce` functions in JavaScript
 with an array `arr` containing numbers [10, 24, 37, 40, 50, 60, 75, 80, 97, 100].
+
+# Problem 6
+
+This code snippet is an example of an asynchronous function using async-await to fetch data from an
+API.
