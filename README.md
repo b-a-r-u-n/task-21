@@ -30,3 +30,10 @@ with an array `arr` containing numbers [10, 24, 37, 40, 50, 60, 75, 80, 97, 100]
 
 This code snippet is an example of an asynchronous function using async-await to fetch data from an
 API.
+
+# Problem 7
+
+The code defines an object named `person` representing a fictional character "Uchiha Madara" with
+properties like name, address, and contact details. The contact property includes an email address
+but does not have a phone number.is using optional chaining (`?.`) to safely access
+the `number` property of the `contact` object within the `person` object.
