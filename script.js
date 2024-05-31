@@ -76,25 +76,39 @@
 // 5. State different use cases of map, filter and reduce functions.
 
 
-let arr = [10, 24, 37, 40, 50, 60, 75, 80, 97, 100];
-// Map Function
-let mapArray = arr.map((num) => {
-    return num + num;
-})
-console.log("Using map.....");
-console.log(mapArray);
+// let arr = [10, 24, 37, 40, 50, 60, 75, 80, 97, 100];
+// // Map Function
+// let mapArray = arr.map((num) => {
+//     return num + num;
+// })
+// console.log("Using map.....");
+// console.log(mapArray);
 
-//filter function
-let filterArray = arr.filter((num) => {
-    return num % 10 == 0;
-})
-console.log("Using filter.....");
-console.log(filterArray);
+// //filter function
+// let filterArray = arr.filter((num) => {
+//     return num % 10 == 0;
+// })
+// console.log("Using filter.....");
+// console.log(filterArray);
 
-//reduce function
-let reduceNumber = arr.reduce((prev , aft) => {
-    return prev + aft;
-})
-console.log("Using reduce.....");
-console.log(reduceNumber);
+// //reduce function
+// let reduceNumber = arr.reduce((prev , aft) => {
+//     return prev + aft;
+// })
+// console.log("Using reduce.....");
+// console.log(reduceNumber);
+
+
+// 6. Write an asynchronous function using async-await  to fetch data from an API (you can use the JSONPlaceholder API) and log the result.
+
+let url = "https://jsonplaceholder.typicode.com/posts/1";
+
+const getData = (async () => {
+    let responce = await fetch(url);
+    let data = await responce.json();
+    console.log(data);
+    console.log(`USER ID: ${data.userId}`);
+    console.log(`TITLE: ${data.title}`);
+    console.log();
+})();
 
