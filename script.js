@@ -1,4 +1,4 @@
-// Given an array of numbers, use the map function with an arrow function to square each element of the array.
+// 1. Given an array of numbers, use the map function with an arrow function to square each element of the array.
 
 // let arr = [1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10];
 
@@ -8,7 +8,7 @@
 
 // console.log(newArr);
 
-// Write a JavaScript function that takes a student's score as a parameter and returns their grade (A, B, C, D, or F) using a series of ternary operators..
+// 2. Write a JavaScript function that takes a student's score as a parameter and returns their grade (A, B, C, D, or F) using a series of ternary operators..
 
 // let marks = prompt("Enter the total marks out of 600");
 // let percentage = (marks/600) * 100;
@@ -16,7 +16,7 @@
 
 // console.log(`${grade} Grade`);
 
-// Create an object representing a car with properties like Company name, model, and year. Write a function to change the car's year property. Also use object destructuring to extract and print the car's Model and Year.
+// 3. Create an object representing a car with properties like Company name, model, and year. Write a function to change the car's year property. Also use object destructuring to extract and print the car's Model and Year.
 
 let car = {
     name: "Toyota",
