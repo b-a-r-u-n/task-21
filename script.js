@@ -101,14 +101,32 @@
 
 // 6. Write an asynchronous function using async-await  to fetch data from an API (you can use the JSONPlaceholder API) and log the result.
 
-let url = "https://jsonplaceholder.typicode.com/posts/1";
+// let url = "https://jsonplaceholder.typicode.com/posts/1";
 
-const getData = (async () => {
-    let responce = await fetch(url);
-    let data = await responce.json();
-    console.log(data);
-    console.log(`USER ID: ${data.userId}`);
-    console.log(`TITLE: ${data.title}`);
-    console.log();
-})();
+// const getData = (async () => {
+//     let responce = await fetch(url);
+//     let data = await responce.json();
+//     console.log(data);
+//     console.log(`USER ID: ${data.userId}`);
+//     console.log(`TITLE: ${data.title}`);
+//     console.log();
+// })();
 
+// 7. Define a nested object representing a person with properties like name, address, and contact. Use optional chaining to safely access the person's phone number, even if the contact property is missing.
+
+
+let person = {
+    name: "Uchiha Madara",
+    address: {
+        street: "Konoha",
+        city: "Hidden Leaf",
+        state: "Fire Country",
+        country: "Shinobi World"
+    },
+    contact: {
+        email: "madarauchiha@gmail.com",
+    }
+}
+
+
+console.log(person.contact?.number);
