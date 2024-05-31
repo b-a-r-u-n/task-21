@@ -18,38 +18,58 @@
 
 // 3. Create an object representing a car with properties like Company name, model, and year. Write a function to change the car's year property. Also use object destructuring to extract and print the car's Model and Year.
 
-let car = {
-    name: "Toyota",
-    model: "Supra",
-    year: 2002
-}
-console.log(`Name = ${car.name}`);
-console.log(`Model = ${car.model}`);
-console.log(`Year = ${car.year}`);
+// let car = {
+//     name: "Toyota",
+//     model: "Supra",
+//     year: 2002
+// }
+// console.log(`Name = ${car.name}`);
+// console.log(`Model = ${car.model}`);
+// console.log(`Year = ${car.year}`);
 
 
 
-changeYear = ((car) => {
-    return new Promise((resolve , reject) => {
-        setTimeout(() => {
-            car.year = 2024;
-            resolve("Success");
-        } , 3000);
+// changeYear = ((car) => {
+//     return new Promise((resolve , reject) => {
+//         setTimeout(() => {
+//             car.year = 2024;
+//             resolve("Success");
+//         } , 3000);
         
-    })
-});
+//     })
+// });
 
-(async function functionCall(){
-    await changeYear(car);
-    console.log("After changing Year");
-    console.log(`Name = ${car.name}`);
-    console.log(`Model = ${car.model}`);
-    console.log(`Year = ${car.year}`);
+// (async function functionCall(){
+//     await changeYear(car);
+//     console.log("After changing Year");
+//     console.log(`Name = ${car.name}`);
+//     console.log(`Model = ${car.model}`);
+//     console.log(`Year = ${car.year}`);
 
-    let {model , year} = car;
-    console.log(`Model = ${model}`);
-    console.log(`Year = ${year}`);
-})();
+//     let {model , year} = car;
+//     console.log(`Model = ${model}`);
+//     console.log(`Year = ${year}`);
+// })();
 
+
+// 4. Given an array of numbers, use the filter function to create a new array containing only the prime numbers.
+
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100];
+let count = 0;
+let primeNumbers = arr.filter((num) => {
+    for(let i = 2; i<num ; i++){
+        if(num % i === 0){
+            return false;
+        }
+    }
+    if(num == 1){
+        return false;
+    }
+    return true;
+
+})
+
+console.log(primeNumbers);
 
 
