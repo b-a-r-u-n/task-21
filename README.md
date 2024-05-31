@@ -10,3 +10,8 @@ the console, which will display the squared values of the original array element
 This JavaScript code snippet is a function that takes a student's score as input, calculates the
 percentage based on the total marks (assumed to be out of 600), and then determines the
 corresponding grade using a series of ternary operators.
+
+# Problem 3
+
+This code snippet is demonstrating the use of an object in JavaScript to represent a car with
+properties like name, model, and year.
